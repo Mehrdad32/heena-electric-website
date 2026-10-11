@@ -63,7 +63,8 @@ function buildCatalog(site,products){
     <section class="detail-section"><div class="container detail-layout"><div class="detail-media"><div class="detail-main">${viz(p,true)}</div>${gallery}</div>
     <div class="detail-copy"><span class="kicker">${esc(p.category)} / هینا الکتریک</span><h1>${esc(p.name)}</h1><p class="detail-subtitle">${esc(p.subtitle)}</p><p>${esc(p.description)}</p>
     <div class="detail-price"><span>قیمت اعلام‌شده</span><strong>${price(p)}</strong></div>${variantTable(p)}${action(p)}<p class="muted-note">${contact?"با انتخاب دکمه، شماره مجموعه در تلفن شما شماره‌گیری می‌شود.":"دکمه تماس پس از دریافت شماره مجموعه فعال می‌شود."}</p>
-    <div class="detail-note">مشخصات و تصاویر تکمیلی پس از دریافت اطلاعات محصول به‌روزرسانی می‌شوند.</div></div></div></section>
+    <div class="detail-note">${p.installationNote?esc(p.installationNote):"مشخصات و تصاویر تکمیلی پس از دریافت اطلاعات محصول به‌روزرسانی می‌شوند."}</div></div></div></section>
+    ${p.features?.length?`<section class="section feature-section"><div class="container">${sectionTitle("ویژگی‌ها","امکانات شاخص محصول")}<div class="feature-grid">${p.features.map((f,i)=>`<article class="feature-card"><span class="feature-no">${fnum(i+1).padStart(2,"۰")}</span><h3>${esc(f.title)}</h3><p>${esc(f.description)}</p></article>`).join("")}</div></div></section>`:""}
     <section class="section spec-section"><div class="container">${sectionTitle("راهنمای محصول","مشخصات و کاربرد")}<div class="spec-layout"><div class="spec-table"><h3>اطلاعات تأییدشده فعلی</h3><dl>${specRows.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join("")}</dl></div><div class="spec-aside"><h3>اطلاعات تکمیلی</h3><p>محدوده ولتاژ عملکرد، زمان تأخیر، ابعاد، نوع اتصال و جزئیات گارانتی فقط پس از دریافت مشخصات معتبر این مدل در صفحه درج می‌شوند.</p><a class="text-link" href="/products/">مشاهده سایر محصولات ←</a></div></div></div></section>
     ${contactSection}</main>${end}`;
   }
