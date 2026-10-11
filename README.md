@@ -37,3 +37,7 @@ HTML صفحات به‌صورت ایستا تولید می‌شود و هر مح
 - Product page includes gallery thumbnails with accessible vanilla JS, verified label values, product highlights, 5 FAQs, price from 1405/07/10 list, related products, and safety note.
 - Page appearance is based on the existing navy/gold identity; the example workers.dev site was not fetchable for exact design comparison.
 - New Cloudflare Pages project should be created later under the intended account. Do not reuse the unconnected workers.dev preview deployment.
+
+## Cloudflare Pages Preview
+
+برای تست نسخه جدید بدون تغییر `main`، پروژه `heena-electric` را در Cloudflare Pages به GitHub متصل نگه دارید. شاخه `feat/product-catalog-foundation` باید تحت **All non-Production branches** مجاز باشد. پس از هر Push جدید به این شاخه، در بخش Deployments به دنبال **Preview** بگردید. انتشار اصلی فقط از `main` انجام می‌شود.
