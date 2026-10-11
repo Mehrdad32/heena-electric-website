@@ -30,3 +30,10 @@ HTML صفحات به‌صورت ایستا تولید می‌شود و هر مح
 - مشخصات بر اساس تصویر واضح از برچسب روی دستگاه استخراج و در `data/products.json` ثبت شدند.
 - مقادیر پیش از انتشار نهایی توسط سازنده تأیید شوند.
 - برای گالری، تصاویر واقعی باید در `assets/images/digital-meter-30a/` آپلود شوند و سپس مسیر فایل‌ها در `mainImage` و `gallery` قرار گیرد؛ تا پیش از آپلود واقعی عکس‌ها، عمداً مسیر شکسته در HTML ثبت نشده است.
+
+## Digital protector detail update
+
+- Main product photograph: `assets/images/digital-meter-30a/hero.webp`. Gallery includes 7 alternative photo angles and packaging. All files are committed as WebP.
+- Product page includes gallery thumbnails with accessible vanilla JS, verified label values, product highlights, 5 FAQs, price from 1405/07/10 list, related products, and safety note.
+- Page appearance is based on the existing navy/gold identity; the example workers.dev site was not fetchable for exact design comparison.
+- New Cloudflare Pages project should be created later under the intended account. Do not reuse the unconnected workers.dev preview deployment.
