@@ -39,7 +39,11 @@
     ],
     "amperage": "۱۰ آمپر",
     "mainImage": "/assets/images/refrigerator-freezer/hero.webp",
-    "gallery": [],
+    "gallery": [
+      "/assets/images/refrigerator-freezer/front-original.webp",
+      "/assets/images/refrigerator-freezer/back-label.webp",
+      "/assets/images/refrigerator-freezer/package.webp"
+    ],
     "specs": [
       {
         "label": "تعداد پریز خروجی",
@@ -128,9 +132,9 @@
     "installationNote": "پیش از اتصال، جریان موردنیاز یخچال یا فریزر را با جریان نامی محافظ بررسی کنید؛ مجموع بار دو خروجی نباید از ۱۰ آمپر تجاوز کند. از به‌کارگیری در محیط مرطوب یا با پریز و کابل آسیب‌دیده خودداری کنید.",
     "imageAlt": "محافظ برق یخچال و فریزر هینا الکتریک دو پریز ۱۰ آمپر همراه کابل و دوشاخه",
     "galleryAlt": [
-      "نمای واقعی جلوی محافظ و نشانگرهای وضعیت",
-      "نمای پشت محافظ و برچسب راهنمای نصب",
-      "نمای محافظ و جعبه اصلی هینا الکتریک"
+      "نمای واقعی جلوی محافظ یخچال و فریزر",
+      "نمای پشت دستگاه و برچسب مشخصات",
+      "محافظ دو پریز یخچال و فریزر همراه بسته‌بندی"
     ],
     "faqs": [
       {
