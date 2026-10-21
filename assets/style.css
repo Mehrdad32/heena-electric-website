@@ -43,3 +43,10 @@
     padding:3px;
   }
 }
+
+/* Photo viewer for appliance models with a transparent cutout and a separate lifestyle photograph. */
+.detail-media.gallery-theme-studio .detail-main.has-product-photo{background:radial-gradient(ellipse at 50% 45%,#2d4860 0%,#152a40 64%,#0c1b2d 100%);border-color:#36526b;padding:clamp(10px,2vw,20px)}
+.detail-media.gallery-theme-studio .gallery-thumb{background:linear-gradient(145deg,#20374e,#0f2032);border-color:#38516b}
+.detail-media.gallery-theme-studio .gallery-thumb.is-active{border-color:var(--accent)}
+.detail-media.gallery-theme-studio .gallery-thumb .product-photo,.detail-media.gallery-theme-studio .gallery-thumb img{object-fit:contain}
+@media(max-width:730px){.detail-media.gallery-theme-studio .detail-main.has-product-photo{padding:10px}}
