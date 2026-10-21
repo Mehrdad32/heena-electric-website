@@ -9,3 +9,37 @@
 @media(max-width:900px){.detail-layout{grid-template-columns:1fr;gap:27px}.detail-main.has-product-photo{max-width:710px;margin:auto}}
 @media(max-width:730px){.menu-toggle{display:flex;order:-1}.nav{position:relative}.nav-links{display:none;position:absolute;top:calc(100% - 5px);left:0;right:0;flex-direction:column;gap:6px;background:#122238;padding:16px;border:1px solid var(--line);border-radius:12px;box-shadow:0 20px 40px #0008}.nav-links.is-open{display:flex}.nav-links a{padding:9px}.brand{margin-right:auto}.gallery{gap:7px}.gallery-thumb{padding:2px;border-radius:8px}.detail-main.has-product-photo{padding:8px}.detail-copy h1{font-size:2rem}.related-grid .product-card:last-child{display:none}}
 @media(max-width:450px){.faq-item{padding:0 15px}.related-grid .product-card:last-child{display:block}}
+
+/* Navy photo stage for products with black-backed studio images.
+   Screen blending removes the black matte visually without modifying labels or pixels. */
+.detail-media.gallery-theme-navy .detail-main.has-product-photo{
+  background:radial-gradient(ellipse at 50% 42%,#29455c 0%,#172d43 54%,#0c192b 100%);
+  border:1px solid #365169;
+  box-shadow:inset 0 0 42px #0916236b,0 18px 42px #02080f35;
+  padding:clamp(10px,2vw,22px);
+}
+.detail-media.gallery-theme-navy .gallery-thumb{
+  background:radial-gradient(circle at center,#243a51,#101e30 90%);
+  border-color:#3c536b;
+}
+.detail-media.gallery-theme-navy .gallery-thumb.is-active{
+  border-color:var(--accent);
+  box-shadow:0 0 0 2px #efb54435;
+}
+.detail-media.gallery-theme-navy .gallery-thumb img:not([src$="/hero.webp"]),
+.detail-media.gallery-theme-navy .detail-main .product-photo:not([src$="/hero.webp"]){
+  mix-blend-mode:screen;
+}
+/* Keep the isolated transparent product crisp on the shared navy stage. */
+.detail-media.gallery-theme-navy .product-photo[src$="/hero.webp"]{
+  mix-blend-mode:normal;
+}
+@media(max-width:730px){
+  .detail-media.gallery-theme-navy .detail-main.has-product-photo{
+    padding:10px;
+    border-radius:19px;
+  }
+  .detail-media.gallery-theme-navy .gallery-thumb{
+    padding:3px;
+  }
+}
