@@ -10,8 +10,12 @@
       "تجهیزات خانگی سازگار با جریان نامی دستگاه"
     ],
     "amperage": "۱۰ آمپر (مجموع خروجی‌ها)",
-    "mainImage": "",
-    "gallery": [],
+    "mainImage": "/assets/images/audio-video/hero.webp",
+    "gallery": [
+      "/assets/images/audio-video/front-original.webp",
+      "/assets/images/audio-video/package-and-product.webp",
+      "/assets/images/audio-video/back-label.webp"
+    ],
     "specs": [
       {
         "label": "تعداد پریز خروجی",
@@ -65,7 +69,7 @@
     ],
     "cartonQuantity": 20,
     "priceListEffectiveDate": "۱۴۰۵/۰۷/۱۰",
-    "imageAlt": "نمای روبه‌رو محافظ ولتاژ چهارخانه ۱۰ آمپر هینا الکتریک با کلید قرمز، چهار پریز و کابل",
+    "imageAlt": "عکس اصلی محافظ برق چهارخانه صوتی و تصویری ۱۰ آمپر هینا الکتریک با کلید قرمز، چهار خروجی و کابل",
     "galleryAlt": [
       "نمای جلوی محافظ چهارخانه و دوشاخه کابل",
       "بسته‌بندی آبی هینا الکتریک در کنار محافظ چهارخانه",
@@ -121,7 +125,8 @@
         "question": "آیا محافظ قابل نصب روی دیوار است؟",
         "answer": "در پشت بدنه دو شیار آویز برای نصب دیواری دیده می‌شود. نصب باید متناسب با شرایط محیط و دستورالعمل سازنده انجام شود."
       }
-    ]
+    ],
+    "photoCredits": "تصاویر واقعی محصول و فایل PNG مرجع توسط هینا الکتریک ارائه شده‌اند."
   },
   {
     "slug": "refrigerator-freezer",
