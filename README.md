@@ -52,3 +52,12 @@ HTML صفحات به‌صورت ایستا تولید می‌شود و هر مح
 - The other submitted images show `ROYA-200`, `MAX 10A/250V` on the rear and 10A printed on the package/physical unit; they must **not** be mixed into the 30A product gallery.
 - Product page is `noindex,nofollow` and intentionally excluded from sitemap until the owner confirms actual model rating and correct rear label/product images. Price comes from the 1405/07/10 list and does not independently validate current rating.
 - No final electrical/installation rating or device compatibility is asserted until verified.
+
+
+## Release polish and SEO — 2026-10-22
+- Public production host (confirmed by Cloudflare GitHub deployment): `https://heena-electric.pages.dev`. Canonical, Open Graph, JSON-LD and sitemap derive from `data/site.json` and currently use that host.
+- **Do not point canonical or sitemap at `heena-electric.ir` until its Cloudflare Pages custom-domain connection and HTTPS are verified.** After mapping the domain, change `data/site.json.domain`, run `npm run release-check`, deploy, submit the new sitemap in Google Search Console, and redirect the `*.pages.dev` host to the confirmed custom domain.
+- Homepage hero uses real product photos. Product gallery stages use a navy background on mobile and desktop.
+- `npm run release-check` regenerates pages and runs built-in checks for SEO URLs, core content, image paths, prices and call-to-buy links. No external npm dependencies or GitHub Actions workflow is required.
+- Product prices come from the dated ۱۴۰۵/۰۷/۱۰ list; confirm validity with the merchant. Do not claim guaranteed stock or merchant ratings without evidence.
+- Search Console verification, DNS ownership, `heena-electric.ir` routing, and screenshot approval require the account owner. 
